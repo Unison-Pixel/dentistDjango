@@ -1,0 +1,54 @@
+<h1> Hello Appointment </h1>
+
+
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Programa un turno {% endblock %}
+{% block meta_description %} Programa un turno {% endblock %}
+{% block content %}
+
+
+  <!-- ***** Breadcrumb Area Start ***** -->
+  <div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg-img/12.jpg' %});">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-12">
+          <h2 class="title">Programa un turno</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="breadcumb--con">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#"><i class="fa fa-home"></i> Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Programa un Turno</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Breadcrumb Area End ***** -->
+  
+  <!-- ***** Contact Area Start ***** -->
+  	<center>
+  		<h1>Review your information: </h1>
+  		<strong>Tu nombre: </strong>{{your_name}}<br/>
+  		<strong>Tu telefono: </strong>{{your_phone}}</br>
+  		<strong>Tu email: </strong>{{your_email}}</br>
+  		<strong>Tu direccion: </strong>{{your_address}}</br>
+  		<strong>Tu horario elegido: </strong>{{your_schedule}}</br>
+  		<strong>Tu fecha elegida: </strong>{{your_date}}</br>
+  		<strong>Tu mensaje: </strong>{{your_message}}</br>
+  	
+	</br></br>
+	<strong>Nota: </strong> Este turno no ha sido procesado aún. Te contactaré en breve para confirmar tu turno.
+  	</br></br></br></br>
+  	</center>
+  <!-- ***** Contact Area End ***** -->
+
+{% endblock %}
