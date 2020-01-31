@@ -17,7 +17,7 @@ def contact(request):
 			message, # subject
 			message, # message
 			message_email, # from email
-			['spectre00010@gmail.com'], # to email
+			['******************'], # to email
 			)
 
 
@@ -50,7 +50,7 @@ def appointment(request):
 			'Solicitud de turno', # subject
 			appointment, # message
 			your_email, # from email
-			['spectre00010@gmail.com'], # to email
+			['****************'], # to email
 			)
 
 
